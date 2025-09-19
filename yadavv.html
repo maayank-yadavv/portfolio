@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Yadav - Cybersecurity Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+        .logo-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        .glass-effect {
+            background: rgba(20, 20, 20, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.2), 0 4px 6px -2px rgba(220, 38, 38, 0.1);
+        }
+        .project-card:hover {
+             border-color: #ef4444;
+        }
+        .name-glow {
+            text-shadow: 0 0 8px rgba(239, 68, 68, 0.7);
+        }
+        #tsparticles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div id="tsparticles"></div>
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass-effect">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-4xl font-bold text-red-500 logo-font">Yadav</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-slate-300 hover:text-red-500 transition duration-300">About</a>
+                <a href="#skills" class="text-slate-300 hover:text-red-500 transition duration-300">Skills</a>
+                <a href="#projects" class="text-slate-300 hover:text-red-500 transition duration-300">Projects</a>
+                <a href="#contact" class="text-slate-300 hover:text-red-500 transition duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-lg transition duration-300">
+                Get in Touch
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 md:pt-32">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[70vh] flex flex-col justify-center items-center text-center">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                    Mayank Yadav
+                </h1>
+                <p class="text-lg md:text-2xl text-red-500 font-semibold mb-8">
+                    Cybersecurity Analyst & Ethical Hacker
+                </p>
+                <p class="text-slate-400 max-w-xl mx-auto">
+                    A dedicated cybersecurity student at MIET with a passion for defending digital frontiers. Specializing in vulnerability assessment, network security, and proactive threat mitigation.
+                </p>
+                <div class="mt-10 flex justify-center gap-4">
+                     <a href="#projects" class="bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300">View My Work</a>
+                     <a href="https://github.com/your-github-username" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-slate-600 transition duration-300">Visit GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="py-20">
+             <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">About Me</h2>
+                <div class="h-1 w-24 bg-red-600 mx-auto mt-2"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="relative group">
+                        <img src="https://placehold.co/400x400/0a0a0a/0a0a0a" alt="Mayank Yadav" class="rounded-full w-64 h-64 border-4 border-red-600 shadow-xl">
+                        <div class="absolute inset-0 rounded-full flex items-center justify-center bg-black bg-opacity-40">
+                             <h3 class="text-4xl logo-font text-white name-glow text-center transition-transform duration-300 group-hover:scale-110">Mayank Yadav</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 text-slate-300 space-y-4">
+                    <p>
+                        Hello! I'm Mayank Yadav, a computer science student at Meerut Institute of Engineering and Technology (MIET), specializing in cybersecurity. My journey into the world of tech began with a curiosity for how things work, which quickly evolved into a passion for securing them.
+                    </p>
+                    <p>
+                        I thrive on the challenge of identifying and mitigating security vulnerabilities. My coursework and personal projects have provided me with hands-on experience in ethical hacking, network analysis, and developing secure systems. I'm committed to continuous learning and staying ahead of the ever-evolving landscape of cyber threats.
+                    </p>
+                     <p>
+                        When I'm not exploring security protocols, you can find me contributing to open-source projects or participating in Capture The Flag (CTF) competitions to sharpen my skills.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Technical Skills</h2>
+                <div class="h-1 w-20 bg-red-600 mx-auto mt-2"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Skill Card -->
+                <div class="skill-card glass-effect rounded-lg p-6 text-center transition duration-300">
+                    <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.789-2.75 9.565M12 11c3.517 0 6.789-1.009 9.565-2.75M12 11V2.435c0-1.355.68-2.59 1.75-3.165M12 11c-3.517 0-6.789 1.009-9.565 2.75M3.185 8.25A9.003 9.003 0 0012 21.565 9.003 9.003 0 0020.815 8.25M12 21.565V11"></path></svg>
+                    <h3 class="font-semibold text-lg text-white">Network Security</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card glass-effect rounded-lg p-6 text-center transition duration-300">
+                    <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    <h3 class="font-semibold text-lg text-white">Ethical Hacking</h3>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card glass-effect rounded-lg p-6 text-center transition duration-300">
+                    <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <h3 class="font-semibold text-lg text-white">Vulnerability Scanning</h3>
+                </div>
+                 <!-- Skill Card -->
+                <div class="skill-card glass-effect rounded-lg p-6 text-center transition duration-300">
+                    <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <h3 class="font-semibold text-lg text-white">Python Scripting</h3>
+                </div>
+                 <!-- Skill Card -->
+                <div class="skill-card glass-effect rounded-lg p-6 text-center transition duration-300">
+                    <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <h3 class="font-semibold text-lg text-white">Linux/Unix</h3>
+                </div>
+                 <!-- Skill Card -->
+                <div class="skill-card glass-effect rounded-lg p-6 text-center transition duration-300">
+                    <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3 class="font-semibold text-lg text-white">Incident Response</h3>
+                </div>
+                 <!-- Skill Card -->
+                <div class="skill-card glass-effect rounded-lg p-6 text-center transition duration-300">
+                    <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H5v-2H3v-2H1.258a1 1 0 01-.97-1.243l1.258-7.5a1 1 0 01.97-1.243H7V3a2 2 0 012-2h3.586a1 1 0 01.707.293l2 2a1 1 0 01.293.707V6h2a2 2 0 012 2z"></path></svg>
+                    <h3 class="font-semibold text-lg text-white">Cryptography</h3>
+                </div>
+                 <!-- Skill Card -->
+                <div class="skill-card glass-effect rounded-lg p-6 text-center transition duration-300">
+                    <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                    <h3 class="font-semibold text-lg text-white">Wireshark</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Featured Projects</h2>
+                <div class="h-1 w-24 bg-red-600 mx-auto mt-2"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card glass-effect rounded-lg overflow-hidden border-2 border-transparent transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-500 mb-2">Network Intrusion Detection System (NIDS)</h3>
+                        <p class="text-slate-400 mb-4">
+                            Developed a Python-based NIDS to monitor network traffic in real-time. It uses packet sniffing and rule-based analysis to detect and flag suspicious activities like port scanning and malware signatures.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Python</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Scapy</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Networking</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-effect rounded-lg overflow-hidden border-2 border-transparent transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-500 mb-2">Web Application Vulnerability Scanner</h3>
+                        <p class="text-slate-400 mb-4">
+                            Created a tool to automate the discovery of common web vulnerabilities such as SQL Injection, XSS, and CSRF. The scanner crawls a target web application and reports potential security flaws.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Python</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">OWASP Top 10</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-effect rounded-lg overflow-hidden border-2 border-transparent transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-500 mb-2">Phishing Campaign Simulator</h3>
+                        <p class="text-slate-400 mb-4">
+                            Designed and executed a controlled phishing simulation to test user security awareness. The project involved creating email templates, a credential-harvesting page, and analyzing the results.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Social Engineering</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">HTML/CSS</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Security Awareness</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card glass-effect rounded-lg overflow-hidden border-2 border-transparent transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-500 mb-2">Secure Password Manager</h3>
+                        <p class="text-slate-400 mb-4">
+                            Built a local password manager using Python and cryptography libraries. Features include master password protection, AES-256 encryption for stored credentials, and a secure password generator.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Python</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Cryptography</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">AES-256</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project 5 -->
+                <div class="project-card glass-effect rounded-lg overflow-hidden border-2 border-transparent transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-500 mb-2">Firewall Configuration Automation</h3>
+                        <p class="text-slate-400 mb-4">
+                            Developed a script to automate the configuration of `iptables` on Linux systems. This tool allows for the easy application of predefined rule sets to harden server security and control traffic flow.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Bash Scripting</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">iptables</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Linux Security</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project 6 -->
+                <div class="project-card glass-effect rounded-lg overflow-hidden border-2 border-transparent transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-500 mb-2">Encrypted Chat Application</h3>
+                        <p class="text-slate-400 mb-4">
+                           A client-server chat application that implements end-to-end encryption. All messages are encrypted on the client-side before transmission, ensuring that only the intended recipient can read them.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Python Sockets</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">E2E Encryption</span>
+                            <span class="bg-slate-700 text-red-300 text-xs font-semibold px-2.5 py-1 rounded">Networking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+             <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Get In Touch</h2>
+                <div class="h-1 w-20 bg-red-600 mx-auto mt-2"></div>
+            </div>
+            <p class="text-slate-400 max-w-lg mx-auto mb-8">
+                I'm currently seeking internship opportunities and am open to collaborating on interesting projects. Feel free to reach out!
+            </p>
+            <a href="mailto:101mayankyadav@gmail.com" class="inline-block bg-red-600 text-white font-bold text-lg py-3 px-8 rounded-lg hover:bg-red-700 transition duration-300">
+                101mayankyadav@gmail.com
+            </a>
+            <div class="flex justify-center gap-6 mt-10">
+                <a href="https://github.com/maayank-yadavv" target="_blank" class="text-slate-400 hover:text-red-500 transition duration-300">
+                   <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/maayank_yadavv" target="_blank" class="text-slate-400 hover:text-red-500 transition duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/maayank_yadavv" target="_blank" class="text-slate-400 hover:text-red-500 transition duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="container mx-auto px-6 py-4 text-center text-slate-500">
+            <p>&copy; 2025 Mayank Yadav. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script>
+        // Simple script for smooth scrolling and future animations
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // tsParticles Animation
+        window.addEventListener('load', () => {
+            tsParticles.load("tsparticles", {
+                fpsLimit: 60,
+                interactivity: {
+                    events: {
+                        onHover: {
+                            enable: true,
+                            mode: "repulse",
+                        },
+                        resize: true,
+                    },
+                    modes: {
+                        repulse: {
+                            distance: 100,
+                            duration: 0.4,
+                        },
+                    },
+                },
+                particles: {
+                    color: {
+                        value: "#ffffff",
+                    },
+                    links: {
+                        color: "#ffffff",
+                        distance: 150,
+                        enable: true,
+                        opacity: 0.1,
+                        width: 1,
+                    },
+                    move: {
+                        direction: "none",
+                        enable: true,
+                        outModes: {
+                            default: "bounce",
+                        },
+                        random: false,
+                        speed: 1,
+                        straight: false,
+                    },
+                    number: {
+                        density: {
+                            enable: true,
+                            area: 800,
+                        },
+                        value: 80,
+                    },
+                    opacity: {
+                        value: 0.2,
+                    },
+                    shape: {
+                        type: "circle",
+                    },
+                    size: {
+                        value: { min: 1, max: 3 },
+                    },
+                },
+                detectRetina: true,
+            });
+        });
+    </script>
+</body>
+</html>
